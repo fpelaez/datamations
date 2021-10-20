@@ -7,9 +7,8 @@ HTMLWidgets.widget({
         return {
 
             renderValue: function (x) {
-                console.log(x);
-                init(el.id, {specs: x.specs, autoPlay: true});
-                console.log("init ran");
+                const app = App();
+                app.init(el.id, {specs: x.specs, autoPlay: true});
             },
 
             resize: function (width, height) { },
